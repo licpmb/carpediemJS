@@ -20,7 +20,10 @@ h1{ /*titulo Nuestros tratamientos esteticos*/
 p, a, h2, h3, h4, ul, li, span{
     font-family: "raleway";
 }
+  body{
+      width: 100%;
 
+    }
    
    
 

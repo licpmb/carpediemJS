@@ -50,6 +50,10 @@
         background-color: #f5daca;
         border-bottom: 1px solid rgb(129, 111, 125);
     }
+  body{
+      width: 100%;
+
+    }
     /*-------------------------------------------------- */
     
     /*HEADER*/

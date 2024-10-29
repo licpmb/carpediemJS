@@ -49,7 +49,10 @@
   p::selection {
     background-color: crimson;
   }
-  
+  body{
+      width: 100%;
+
+    }
   /*-------------------------------------------------- */
   
   /*HEADER*/
@@ -178,17 +181,8 @@
   
   /*DIVdatos*/
   .divDatos {
-    /* max-width: 700px; */
     display: grid;
-    /* grid-template-columns: 20% 80%; */
-    /* row-gap: 10px; */
     justify-content: center;
-    /* align-items:start; */
-    /* width: 800px; */
-  
-    /* width: fit-content; */
-  
-    /* width: 70%; */
   
   }
   .datos{
@@ -216,7 +210,6 @@
     /*Al padre le doy display:flex*/
     color: rgb(66, 66, 58);
     background-color: white;
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,7 +223,6 @@
   footer .redes i {
     /*cambio el color de los iconos redes*/
     color: rgb(145, 99, 134);
-  
     transition: 0.2 all;
   }
   

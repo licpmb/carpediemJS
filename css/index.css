@@ -2,21 +2,18 @@
 /*Generales*/
 
 * {
-
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
     font-style: normal;
     font-family:'Times New Roman', Times, serif
     }
-      
-      h1{
+    h1{
         font-family: "Pinyon Script";
         font-size: 72px;
-      }
-      p, a, h2, h3, h4, ul, li{
+    }
+    p, a, h2, h3, h4, ul, li{
         font-family: "raleway";
     }
-    
     .p-3{
         padding: 0 !important;
     }
@@ -35,7 +32,9 @@
     p::selection{
         background-color: crimson;
     }
-    
+    body{
+      width: 100%;
+    }
     /*-------------------------------------------------- */
     
     /*HEADER*/
@@ -79,6 +78,10 @@
         justify-content: flex-end;
     }
     
+
+    .sticky-header{
+        position: sticky;
+    }
     .navbar-collapse{
         flex-grow: 0 !important;
     }
