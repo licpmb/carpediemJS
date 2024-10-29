@@ -1,0 +1,40 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: html_test
+      id: html_test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: html_test
+        setup-command: npm install htmlhint
+        command: npm run lint:combined
+        timeout: 10
+        max-score: 50
+    - name: css_test
+      id: css_test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: css_test
+        setup-command: npm install stylelint stylelint-config-standard
+        command: npm run lint:css
+        timeout: 10
+        max-score: 50
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        HTML_TEST_RESULTS: "${{steps.html_test.outputs.result}}"
+        CSS_TEST_RESULTS: "${{steps.css_test.outputs.result}}"
+      with:
+        runners: html_test,css_test
