@@ -35,18 +35,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Home" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Nosotros" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" alt="Servicios" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
           </ul>
         </div>
       </div>
@@ -56,6 +56,7 @@
   <!-- END HEADER -->
   <!-- MAIN -->
   <main>
+    <section>
     <div class="main">
       <!--contenedor general:main-->
       <a href="./servicios.html" class="button">Volver</a>
@@ -68,7 +69,7 @@
           <button id="searchBtn" class="button" type="submit">Buscar</button>
         </div>
       </div>
-      <div id="editFormContainer" style="display: none">
+      <div id="editFormContainer">
         <form id="editProductForm">
           <input type="hidden" id="editProductId" />
           <label for="editProductName">Name:</label>
@@ -88,7 +89,7 @@
       <table id="containerProductos"></table>
       <div class="addProd">
         <button id="showFormBtn" class="button">Agregar Producto</button>
-        <div id="formContainer" style="display: none">
+        <div id="formContainer">
           <form id="addProductForm">
             <input type="text" id="productName" placeholder="Nombre del producto" required />
             <input type="textarea" id="productDetails" placeholder="Detalles del producto" required />
@@ -99,25 +100,26 @@
         </div>
       </div>
     </div>
+    </section>
   </main>
   <!-- END MAIN -->
   <!-- FOOTER -->
   <footer class="item footer">
     <p>&copy;2024 CarpeDiem - Todos los derechos reservados &middot;</p>
     <div class="redes">
-      <a href="https://www.facebook.com/" title="Facebook"><i class="bx bxl-facebook-circle"></i></a>
-      <a href="https://www.instagram.com/" title="Instagram"><i class="bx bxl-instagram-alt"></i></a>
-      <a href="https://www.youtube.com/" title="YouTube"><i class="bx bxl-youtube"></i></a>
+      <a href="https://www.facebook.com/" alt="Facebook"><i class="bx bxl-facebook-circle"></i></a>
+      <a href="https://www.instagram.com/" alt="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="https://www.youtube.com/" alt="YouTube"><i class="bx bxl-youtube"></i></a>
     </div>
   </footer>
   <!-- END FOOTER -->
-  <script src="./script/fetch.js"></script>
-  <script src="./script/addProduct.js"></script>
-  <script src="./script/deleteProduct.js"></script>
-  <script src="./script/updateProduct.js"></script>
-  <script src="./script/searchProductName.js"></script>
-  <script src="https://kit.fontawesome.com/2e9c3f9d39.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <script defer src="./script/fetch.js"></script>
+  <script defer src="./script/addProduct.js"></script>
+  <script defer src="./script/deleteProduct.js"></script>
+  <script defer src="./script/updateProduct.js"></script>
+  <script defer src="./script/searchProductName.js"></script>
+  <script defer src="https://kit.fontawesome.com/2e9c3f9d39.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>

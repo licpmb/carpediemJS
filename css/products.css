@@ -158,6 +158,9 @@
     color: rgb(83, 79, 69); 
 }  
     
+#editFormContainer #formContainer{
+    display: none;
+}
     /* END MAIN*/
     
     /*-------------------------------------------------- */

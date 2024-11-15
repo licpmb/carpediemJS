@@ -1,5 +1,5 @@
 
-/*Generales*/
+/* Generales */
 
 * {
     font-family: "Pinyon Script", cursive;
@@ -28,6 +28,9 @@
     font-family: "raleway";
   }
   
+  iframe{
+    border: 0;
+  }
   .container {
     /* height: auto;
     padding: 10px;
