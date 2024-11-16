@@ -1,323 +1,297 @@
 :root {
-    --primary-font: "Pinyon Script", cursive;
-    --secondary-font: "Raleway", sans-serif;
-    --highlight-color: crimson;
-    --background-color: #f5daca;
-    --text-color: black;
-    --button-bg: rgb(92, 88, 92);
-    --button-color: rgb(238, 229, 217);
-    --button-border: rgb(129, 111, 125);
+  --primary-font: "Pinyon Script",cursive;
+  --secondary-font: "Raleway",sans-serif;
+  --highlight-color: crimson;
+  --background-color: #f5daca;
+  --text-color: black;
+  --button-bg: rgb(92, 88, 92);
+  --button-color: rgb(238, 229, 217);
+  --button-border: rgb(129, 111, 125)
 }
-
-/* Generales */
 * {
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-style: normal;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-style: normal
 }
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
-
-h2, h3, h4, p, a, ul, li, span {
-    font-family: var(--secondary-font);
+a,
+h2,
+h3,
+h4,
+li,
+p,
+span,
+ul {
+  font-family: var(--secondary-font)
 }
-
 body {
-    width: 100%;
+  width: 100%
 }
-
 h1 {
-    font-family: var(--primary-font);
-    font-size: 72px;
+  font-family: var(--primary-font);
+  font-size: 72px
 }
-
 ::selection {
-    background-color: var(--highlight-color);
+  background-color: var(--highlight-color)
 }
-
-/* Botón */
 .button {
-    background-color: var(--button-bg);
-    color: var(--button-color);
-    text-align: center;
-    padding: 4px;
-    border-radius: 3px;
-    border: 3px solid var(--button-border);
-    transition: 0.2s all;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  text-align: center;
+  padding: 4px;
+  border-radius: 3px;
+  border: 3px solid var(--button-border);
+  transition: .2s all;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.3)
 }
-
 .button:hover {
-    background-color: var(--background-color);
-    color: rgb(83, 79, 69);
+  background-color: var(--background-color);
+  color: #534f45
 }
-
-/* HEADER */
 header {
-    justify-content: space-between;
-    background-color: white;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px
 }
-
 .logo {
-    width: 50px;
-    border-radius: 999px;
+  width: 50px;
+  border-radius: 999px
 }
-
 .menu {
-    list-style-type: none;
-    color: var(--text-color);
+  list-style-type: none;
+  color: var(--text-color)
 }
-
 .menu li {
-    display: inline;
+  display: inline
 }
-
 .menu a {
-    padding: 10px;
+  padding: 10px
 }
-
-a:hover, a:focus {
-    color: var(--highlight-color);
-    background-color: var(--background-color);
-    border-radius: 10px;
-    outline: none;
+a:focus,
+a:hover {
+  color: var(--highlight-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  outline: 0
 }
-
 .nav-link {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end
 }
-
 .navbar-collapse {
-    flex-grow: 0 !important;
+  flex-grow: 0!important
 }
-
-/* MAIN */
 .main {
-    padding: 15px;
-    background-color: var(--background-color);
+  padding: 15px;
+  background-color: var(--background-color)
 }
-
 .main h1 {
-    text-align: center;
-    padding: 15px 0;
-    margin: 0;
-    background-color: var(--background-color);
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  background-color: var(--background-color)
 }
-
 .main .presentacion {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 25px;
-    background-color: rgb(245, 245, 222);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  background-color: #f5f5de
 }
-
 .main .presentacion article {
-    height: 500px;
-    width: 30%;
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+  height: 500px;
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column
 }
-
 .main .presentacion article img {
-    /* max-height: 175px; */
-    object-fit: cover; 
-    object-position: 25% 25%; 
+  object-fit: cover;
+  object-position: 25% 25%
 }
 .main .presentacion article a {
-    text-decoration: none;
-    padding: 6px 5px;
+  text-decoration: none;
+  padding: 6px 5px
 }
-
-.main .presentacion article a h2{
-    font-size: 1.3em;
+.main .presentacion article a h2 {
+  font-size: 1.3em
 }
-.main .presentacion article a h3{
-    font-size: 1.1em;
+.main .presentacion article a h3 {
+  font-size: 1.1em
 }
-.main .presentacion article a h4{
-    font-size: 1em;
+.main .presentacion article a h4 {
+  font-size: 1em
 }
-
 .main .presentacion article p {
-    text-align: center;
-    padding: 10px;
-    margin-right: 3px;
-    color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  margin-right: 3px;
+  color: var(--text-color)
 }
-
-.facial h2, .corporal h2, .aparatologia h2 {
-    text-align: center;
-    padding: 25px;
-    margin: 0;
-    border-color: rgb(189, 176, 187);
-    border-style: double;
-    letter-spacing: 5px;
-    background-color: rgb(65, 62, 65);
-    color: rgb(238, 229, 217);
+.aparatologia h2,
+.corporal h2,
+.facial h2 {
+  text-align: center;
+  padding: 25px;
+  margin: 0;
+  border-color: #bdb0bb;
+  border-style: double;
+  letter-spacing: 5px;
+  background-color: #413e41;
+  color: #eee5d9
 }
-
-.facial section, .corporal section, .aparatologia section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e6cbbd;
+.aparatologia section,
+.corporal section,
+.facial section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6cbbd
 }
-
-.facial section article, .corporal section article, .aparatologia section article {
-    display: flex;
-    justify-content: center;
+.aparatologia section article,
+.corporal section article,
+.facial section article {
+  display: flex;
+  justify-content: center
 }
-.box{
-    width: 100%;
+.box {
+  width: 100%
 }
-.box a{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    font-size: 0.8em;
+.box a {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: .8em
 }
 section .Card {
-    display: flex;
-    width: 90vw;
-    padding: 15px;
-    border: 3px solid rgb(145, 145, 122);
-    margin: 10px;
-    border-radius: 8px;
-    color: var(--text-color);
-    font-size: 1.1em;
-    justify-content: space-between;
-
+  display: flex;
+  width: 90vw;
+  padding: 15px;
+  border: 3px solid #91917a;
+  margin: 10px;
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1.1em;
+  justify-content: space-between
 }
-
 section .Card img {
-    width: 20%;
-    border: 3px solid rgb(145, 145, 122);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    align-self: center;
+  width: 20%;
+  border: 3px solid #91917a;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-self: center
 }
-
 section .Card .titulo_tarjeta {
-    width: auto;
-    color: rgb(95, 64, 89);
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    letter-spacing: 10px;
-    background-color: white;
-    font-size: 1em;
+  width: auto;
+  color: #5f4059;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  background-color: #fff;
+  font-size: 1em
 }
-
 section .Card p {
-    text-align: left;
-    padding-left: 5px;
+  text-align: left;
+  padding-left: 5px
 }
-
 .Card {
-    position: relative;
+  position: relative
 }
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
-    header {
-        font-size: 1em;
-    }
-    header, main, footer {
-        padding: 5px;
-    }
-    body {
-        font-size: 14px;
-    }
-    .main h1 {
-        padding: 10px 0;
-        font-size: 2.5em;
-    }
-    .main .presentacion {
-        padding: 5px;
-        background-color: beige;
-    }
-    .main .presentacion article {
-        width: 80%;
-        display: flex;
-        padding: 10px;
-    }
-    .main .presentacion article a {
-        margin: 0;
-        padding: 0;
-    }
-    .main .presentacion article a h2 {
-        font-size: 1.1em;
-        background-color: rgb(92, 88, 92);
-    }
-    section .Card {
-        width: 75vw;
-        padding: 5px;
-        border: 5px solid rgb(145, 145, 122);
-        flex-direction: column;
-    }
-    section .Card img {
-        width: 80%;
-        border-radius: 10px;
-    }
-    section .Card .titulo_tarjeta {
-        letter-spacing: 4px;
-    }
-    section .Card a {
-        position: absolute;
-        bottom: -15px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    section .Card img {
-        width: 40%;
-    }
-    section .Card a {
-        position: absolute;
-        bottom: -10px;
-    }
-    .facial h2, .corporal h2, .aparatologia h2 {
-        font-size: 1.2rem;
-    }
-    .main .presentacion article {
-        width: 45%;
-        display: flex;
-        padding: 5px;
-    }
-}
-
-/* FOOTER */
-footer {
-    color: rgb(66, 66, 58);
-    background-color: white;
+@media only screen and (max-width:600px) {
+  header {
+    font-size: 1em
+  }
+  footer,
+  header,
+  main {
+    padding: 5px
+  }
+  body {
+    font-size: 14px
+  }
+  .main h1 {
+    padding: 10px 0;
+    font-size: 2.5em
+  }
+  .main .presentacion {
+    padding: 5px;
+    background-color: beige
+  }
+  .main .presentacion article {
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px
+  }
+  .main .presentacion article a {
+    margin: 0;
+    padding: 0
+  }
+  .main .presentacion article a h2 {
+    font-size: 1.1em;
+    background-color: #5c585c
+  }
+  section .Card {
+    width: 75vw;
+    padding: 5px;
+    border: 5px solid #91917a;
+    flex-direction: column
+  }
+  section .Card img {
+    width: 80%;
+    border-radius: 10px
+  }
+  section .Card .titulo_tarjeta {
+    letter-spacing: 4px
+  }
+  section .Card a {
+    position: absolute;
+    bottom: -15px
+  }
 }
-
+@media only screen and (max-width:1000px) {
+  section .Card img {
+    width: 40%
+  }
+  section .Card a {
+    position: absolute;
+    bottom: -10px
+  }
+  .aparatologia h2,
+  .corporal h2,
+  .facial h2 {
+    font-size: 1.2rem
+  }
+  .main .presentacion article {
+    width: 45%;
+    display: flex;
+    padding: 5px
+  }
+}
+footer {
+  color: #42423a;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
 footer .redes {
-    font-size: 1.5em;
+  font-size: 1.5em
 }
-
 footer .redes i {
-    color: rgb(145, 99, 134);
-    transition: 0.2s all;
+  color: #916386;
+  transition: .2s all
 }
-
 footer .redes i:hover {
-    color: rgb(110, 110, 92);
+  color: #6e6e5c
 }

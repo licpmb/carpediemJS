@@ -1,185 +1,149 @@
 :root {
-    --primary-font: "Pinyon Script", cursive;
-    --secondary-font: "Raleway", sans-serif;
-    --highlight-color: rgb(220, 20, 60); /* crimson */
-    --background-color: rgb(245, 218, 202); /* #f5daca */
-    --text-color: rgb(0, 0, 0); /* black */
+  --primary-font: "Pinyon Script",cursive;
+  --secondary-font: "Raleway",sans-serif;
+  --highlight-color: rgb(220, 20, 60);
+  --background-color: rgb(245, 218, 202);
+  --text-color: rgb(0, 0, 0)
 }
-      
-      h1{
-        font-family: "Pinyon Script";
-        font-size: 72px;
-      }
-      p, a, h2, h3, h4, ul, li{
-        font-family: "raleway";
-    }
-    
-    
-    h1::selection{
-        background-color: crimson;
-    }
-    a::selection{
-        background-color: crimson;
-    }
-    p::selection{
-        background-color: crimson;
-    }
-
-  body{
-      width: 100%;
-
-    }
-    /*HEADER*/
-    
-    header {
-        /* display: flex; */
-        justify-content: space-between;
-        background-color: white;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .logo {
-        width: 50px;
-        border-radius: 999px;
-    }
-    
-    .menu {
-        list-style-type: none;
-        color: black;
-    }
-    
-    .menu li {
-        display: inline;
-    
-    }
-    .menu a{
-        padding: 10px;
-    }
-    
-    a:hover{
-        color: crimson;
-        background-color: #f5daca;
-        border-radius: 10px;
-    
-    }
-    .nav-link{
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    .navbar-collapse{
-        flex-grow: 0 !important;
-    }
-    
-/* END HEADER*/
-
-/*-------------------------------------------------- */
-
-/*MAIN*/
-
+h1 {
+  font-family: "Pinyon Script";
+  font-size: 72px
+}
+a,
+h2,
+h3,
+h4,
+li,
+p,
+ul {
+  font-family: raleway
+}
+h1::selection {
+  background-color: #dc143c
+}
+a::selection {
+  background-color: #dc143c
+}
+p::selection {
+  background-color: #dc143c
+}
+body {
+  width: 100%
+}
+header {
+  justify-content: space-between;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px
+}
+.logo {
+  width: 50px;
+  border-radius: 999px
+}
+.menu {
+  list-style-type: none;
+  color: #000
+}
+.menu li {
+  display: inline
+}
+.menu a {
+  padding: 10px
+}
+a:hover {
+  color: #dc143c;
+  background-color: #f5daca;
+  border-radius: 10px
+}
+.nav-link {
+  display: flex;
+  justify-content: flex-end
+}
+.navbar-collapse {
+  flex-grow: 0!important
+}
 .main {
-    padding: 10px;
-    background-color: #f5daca;
-
+  padding: 10px;
+  background-color: #f5daca
 }
-.main h1{
-    text-align: center;
+.main h1 {
+  text-align: center
 }
-
-h1{
-    line-height: 1.1;
+h1 {
+  line-height: 1.1
 }
-h3{
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-    text-align: center;
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center
 }
-h4{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 20px;
-    text-align: center;
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px;
+  text-align: center
 }
-body p{
-    color: #111111;
+body p {
+  color: #111
 }
-.nosotros{
-    background-color: #f5daca;
+.nosotros {
+  background-color: #f5daca
 }
-.profesionales{
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            300px,
-            1fr
-        )
-    );
-    gap: 16px ;
-
+.profesionales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 16px
 }
-section{
-   /* padding: 50px; */
+section p {
+  line-height: 1.8
 }
-section p{
-    line-height: 1.8;
+.nosotros ul {
+  padding-left: 30px
 }
-
-.nosotros ul{
-    padding-left: 30px;
+.nosotros ul li {
+  font-weight: 400;
+  font-size: 18px
 }
-.nosotros ul li{
-    font-weight: 400;
-    font-size: 18px;
+.nosotros ul li p {
+  font-weight: 100;
+  font-size: 15px
 }
-.nosotros ul li p{
-    font-weight: 100;
-    font-size: 15px;
+.img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 50%
 }
-.img{  
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: 0;
-    border-radius: 50%;
+.rosario {
+  background-image: url(../img/profesionales/Rosario_Gonzalez.jpg)
 }
-
-.rosario{
-    background-image: url(../img/profesionales/Rosario_Gonzalez.jpg);
+.yasmin {
+  background-image: url(../img/profesionales/Yasmin_Alvaro.jpg)
 }
-.yasmin{
-    background-image: url(../img/profesionales/Yasmin_Alvaro.jpg);
+.federico {
+  background-image: url(../img/profesionales/Federico_Cuenca.jpg)
 }
-.federico{
-    background-image: url(../img/profesionales/Federico_Cuenca.jpg);
+.debora {
+  background-image: url(../img/profesionales/Debora_Cherem.jpg)
 }
-.debora{
-    background-image: url(../img/profesionales/Debora_Cherem.jpg);
+footer {
+  color: #42423a;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
-/*FOOTER*/
-footer{ /*Al padre le doy display:flex*/
-    color:rgb(66, 66, 58) ;
-    background-color: white;
-    
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;   
+footer .redes {
+  font-size: 1.5em
 }
-
-footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
-    font-size: 1.5em ;
+footer .redes i {
+  color: #916386;
+  transition: .2 all
 }
-
-footer .redes i{ /*cambio el color de los iconos redes*/
-   color:rgb(145, 99, 134);
-
-   transition: 0.2 all;
-}
-footer .redes i:hover{
-    color: rgb(110, 110, 92);
-}
-/* END FOOTER*/
+footer .redes i:hover {
+  color: #6e6e5c
+}* END FOOTER*/
