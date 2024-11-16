@@ -1,9 +1,9 @@
 :root {
     --primary-font: "Pinyon Script", cursive;
     --secondary-font: "Raleway", sans-serif;
-    --highlight-color: crimson;
-    --background-color: #f5daca;
-    --text-color: black;
+    --highlight-color: rgb(220, 20, 60); /* crimson */
+    --background-color: rgb(245, 218, 202); /* #f5daca */
+    --text-color: rgb(0, 0, 0); /* black */
 }
 
 /* Generales */

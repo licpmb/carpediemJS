@@ -1,12 +1,10 @@
-
-/* Generales */
-
-* {
-    font-family: "Pinyon Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Times New Roman", Times, serif;
-  }
+:root {
+    --primary-font: "Pinyon Script", cursive;
+    --secondary-font: "Raleway", sans-serif;
+    --highlight-color: rgb(220, 20, 60); /* crimson */
+    --background-color: rgb(245, 218, 202); /* #f5daca */
+    --text-color: rgb(0, 0, 0); /* black */
+}
   
   h1 {
     font-family: "Pinyon Script";
