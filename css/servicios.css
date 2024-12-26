@@ -84,8 +84,10 @@ a:hover {
   justify-content: flex-end
 }
 .navbar-collapse {
-  flex-grow: 0!important
+  flex-grow: 0!important;
+
 }
+
 .main {
   padding: 15px;
   background-color: var(--background-color)
@@ -207,6 +209,29 @@ section .Card p {
 .Card {
   position: relative
 }
+
+
+footer {
+  color: #42423a;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
+footer .redes {
+  font-size: 1.5em
+}
+footer .redes i {
+  color: #916386;
+  transition: .2s all
+}
+footer .redes i:hover {
+  color: #6e6e5c
+}
+
+
+
 @media only screen and (max-width:600px) {
   header {
     font-size: 1em
@@ -276,22 +301,4 @@ section .Card p {
     display: flex;
     padding: 5px
   }
-}
-footer {
-  color: #42423a;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center
-}
-footer .redes {
-  font-size: 1.5em
-}
-footer .redes i {
-  color: #916386;
-  transition: .2s all
-}
-footer .redes i:hover {
-  color: #6e6e5c
 }

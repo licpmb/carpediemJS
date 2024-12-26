@@ -1,0 +1,163 @@
+:root {
+  --primary-font: "Pinyon Script",cursive;
+  --secondary-font: "Raleway",sans-serif;
+  --highlight-color: rgb(220, 20, 60);
+  --background-color: rgb(245, 218, 202);
+  --text-color: rgb(0, 0, 0)
+}
+h1 {
+  font-family: "Pinyon Script";
+  font-size: 72px
+}
+a,
+button,
+h2,
+h3,
+h4,
+input,
+label,
+legend,
+li,
+p,
+select,
+textarea,
+ul {
+  font-family: raleway
+}
+iframe {
+  border: 0
+}
+h1::selection {
+  background-color: #dc143c
+}
+a::selection {
+  background-color: #dc143c
+}
+p::selection {
+  background-color: #dc143c
+}
+body {
+  width: 100%
+}
+iframe {
+  border: 0
+}
+header {
+  justify-content: space-between;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px
+}
+.logo {
+  width: 50px;
+  border-radius: 999px
+}
+.menu {
+  list-style-type: none;
+  color: #000
+}
+.menu li {
+  display: inline
+}
+.menu a {
+  padding: 10px
+}
+a:hover {
+  color: #dc143c;
+  background-color: #f5daca;
+  border-radius: 10px
+}
+.nav-link {
+  display: flex;
+  justify-content: flex-end
+}
+.navbar-collapse {
+  flex-grow: 0!important
+}
+.main {
+  background-color: #f5daca
+}
+.main h1 {
+  text-align: center
+}
+form {
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  position: relative;
+  top: -3rem;
+  background-color: #f5daca
+}
+form div {
+  display: flex;
+  gap: 3px;
+  justify-content: space-between
+}
+form label input {
+  width: 21rem
+}
+.genre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+textarea {
+  resize: none
+}
+.file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.file input {
+  text-align: center
+}
+.divDatos {
+  display: grid;
+  justify-content: center
+}
+.datos {
+  padding: 20px;
+  position: relative;
+  top: -3rem;
+  background-color: #f5daca;
+  z-index: 2;
+  border-radius: 20px
+}
+iframe {
+  width: 1200px;
+  height: 300px;
+  z-index: 3;
+  width: 100%
+}
+footer {
+  color: #42423a;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+footer .redes {
+  font-size: 1.5em
+}
+footer .redes i {
+  color: #916386;
+  transition: .2 all
+}
+footer .redes i:hover {
+  color: #6e6e5c
+}
+@media (width >=768px) {
+  .distribuidor {
+    width: 100%
+  }
+}
