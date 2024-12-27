@@ -29,8 +29,6 @@ document
     createEvent(name, lastname, email, cel, gender, service, comment, dateTime);
   });
 
-
-
 function initClient() {
   gapi.client
     .init({
@@ -41,6 +39,7 @@ function initClient() {
     })
     .then(() => {
       // Autenticación del usuario
+      console.log("init gapi client ok!");
       gapi.auth2.getAuthInstance().signIn();
     })
     .catch((error) => {
@@ -59,13 +58,22 @@ function handleClientLoad() {
 }
 
 // Crea un evento en Google Calendar
-function createEvent(name, email, dateTime) {
+function createEvent(
+  name,
+  lastname,
+  email,
+  cel,
+  gender,
+  service,
+  comment,
+  dateTime
+) {
   const start = new Date(dateTime);
   const end = new Date(start.getTime() + 60 * 60 * 1000); // 1 hora de duración
 
   const event = {
     summary: `Reserva de ${name}`,
-    description: `Reserva hecha por ${name} (${email})`,
+    description: `Reserva hecha por ${name} ${lastname} (${email}), Cel: ${cel}, Género: ${gender}, Servicio: ${service}, Comentario: ${comment}`,
     start: {
       dateTime: start.toISOString(),
       timeZone: "America/Argentina/Buenos_Aires",
