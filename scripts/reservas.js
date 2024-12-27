@@ -29,11 +29,7 @@ document
     createEvent(name, lastname, email, cel, gender, service, comment, dateTime);
   });
 
-// Carga el cliente de Google
-function handleClientLoad() {
-  console.log("Loading Google API client...");
-  gapi.load("client:auth2", initClient);
-}
+
 
 function initClient() {
   gapi.client
@@ -50,6 +46,16 @@ function initClient() {
     .catch((error) => {
       console.error("Error inicializando el cliente:", error);
     });
+}
+
+// Carga el cliente de Google
+function handleClientLoad() {
+  if (typeof gapi !== "undefined") {
+    console.log("gapi está disponible.");
+    gapi.load("client:auth2", initClient);
+  } else {
+    console.error("gapi no está disponible.");
+  }
 }
 
 // Crea un evento en Google Calendar
