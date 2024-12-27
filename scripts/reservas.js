@@ -5,7 +5,8 @@ const API_KEY = process.env.MY_API_KEY;
 const DISCOVERY_DOCS = [
   "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
 ];
-const SCOPES = "https://www.googleapis.com/auth/calendar.events";
+const SCOPES =
+  "https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.app.created https://www.googleapis.com/auth/calendar.calendarlist.readonly https://www.googleapis.com/auth/calendar.events.freebusy https://www.googleapis.com/auth/calendar.freebusy https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.acls https://www.googleapis.com/auth/calendar.acls.readonly https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.calendarlist https://www.googleapis.com/auth/calendar.calendars https://www.googleapis.com/auth/calendar.calendars.readonly https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.events.owned https://www.googleapis.com/auth/calendar.events.owned.readonly https://www.googleapis.com/auth/calendar.events.readonly";
 
 /// Maneja el envío del formulario
 document
@@ -98,7 +99,7 @@ function createEvent(
     })
     .catch((error) => {
       document.getElementById("response-message").textContent =
-        "Error al crear la reserva.";
+        "Error al crear la reserva: " + error.message;
       console.error("Error:", error);
     });
 }
