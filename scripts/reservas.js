@@ -31,6 +31,7 @@ document
 
 // Carga el cliente de Google
 function handleClientLoad() {
+  console.log("Loading Google API client...");
   gapi.load("client:auth2", initClient);
 }
 
