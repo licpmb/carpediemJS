@@ -1,2 +1,4 @@
 # Variables de entorno
 .env
+.config.js
+config.js

@@ -29,3 +29,21 @@
     z-index: 1000;
     padding: 20px;
 }
+.cart-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.buttonCart{
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.quantity{
+    max-width: 120px;
+}

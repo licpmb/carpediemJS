@@ -1,7 +1,7 @@
-require("dotenv").config();
+import CONFIG from "./config.js";
 
-const CLIENT_ID = process.env.MY_CLIENT_ID;
-const API_KEY = process.env.MY_API_KEY;
+const CLIENT_ID = CONFIG.CLIENT_ID;
+const API_KEY = CONFIG.API_KEY;
 const DISCOVERY_DOCS = [
   "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
 ];

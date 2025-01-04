@@ -166,12 +166,14 @@ a:hover {
   justify-content: center
 }
 .box {
-  width: 100%
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .box a {
   position: absolute;
   right: 15px;
-  bottom: 15px;
+  bottom: -15px;
   font-size: .8em
 }
 section .Card {
@@ -193,7 +195,7 @@ section .Card img {
   align-self: center
 }
 section .Card .titulo_tarjeta {
-  width: auto;
+  width: inherit;
   color: #5f4059;
   margin: auto;
   padding: 10px;
@@ -302,3 +304,4 @@ footer .redes i:hover {
     padding: 5px
   }
 }
+

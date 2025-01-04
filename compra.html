@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Compra</title>
+</head>
+<body>
+    <header>
+        <h1>Gracias por confiar en nosotros.</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <div id="detalle"></div>
+        </section>
+
+    </main>
+  
+    <footer></footer>
+    <form id="formulario" action="https://formspree.io/f/movvevdp" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <br>
+        <input type="text" id="nombre" name="Nombre" placeholder="Ingresa tu nombre" required>
+        <input type="text" id="apellido" name="Apellido" placeholder="Ingresa tu apellido" required>
+        <input type="email" id="email" name="EMail" placeholder="Ingresa tu correo" required>
+        <input type="tel" id="telefono" name="Celular" placeholder="Ingresa tu teléfono" required>
+        <br><br>
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+    </form>
+
+    
+    <div id="detalle"></div>
+    <hr>
+    <a href="tienda.html"><button>Volver</button></a>
+    <script src="compra.js"> </script>
+</body>
+</html>

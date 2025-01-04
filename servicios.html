@@ -68,12 +68,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="servicios.html"
-                  >Servicios</a
-                >
+                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -150,23 +145,14 @@
               />
               <div class="box">
                 <h3 class="titulo_tarjeta">Higiene Facial</h3>
-                <p>
-                  Por medio de los procedimientos de higiene facial, limpiamos
-                  nuestros poros y mantenemos la piel oxigenada.
-                </p>
-                <a href="./contacto.html" class="button"
-                  >Solicitar más información</a
-                >
-                <input type="number" class="quantity" value="1" min="1" />
-                <button
-                  class="button"
-                  onclick="addToCart(event)"
-                  data-name="Higiene Facial"
-                  data-price="100"
-                >
-                  Agregar al Carrito
-                </button>
+                <p>Por medio de los procedimientos de higiene facial, limpiamos nuestros poros y mantenemos la piel oxigenada.</p>
+                <a href="./contacto.html" class="button">Solicitar más información</a>
                 <!--linkea a pagina/formulario de contacto-->
+                <div class="buttonCart">
+                <input name="quantityItem" id="quantityItem" placeholder="Cantidad" type="number" class="quantity" value="1" min="1"/>
+                <button class="button addCartService" onclick="addToCart(event)" data-name="Higiene Facial" data-price="100">Agregar al Carrito</button>
+                </div>
+                <!--Botón de agregar unidad al carrito-->
               </div>
             </article>
 
@@ -174,7 +160,7 @@
               <img
                 class="imagencard"
                 src="img/tratamientos faciales/manchas cutaneas.jpg"
-                alt="imagen de manchas cuatneas"
+                alt="imagen de manchas cutaneas"
               />
               <div class="box">
                 <h3 class="titulo_tarjeta">Manchas cutaneas</h3>
@@ -187,6 +173,12 @@
                 <a href="./contacto.html" class="button"
                   >Solicitar más información</a
                 >
+                                <!--linkea a pagina/formulario de contacto-->
+                <div class="buttonCart">
+                <input name="quantityItem" id="quantityItem" placeholder="Cantidad" type="number" class="quantity" value="1" min="1"/>
+                <button class="button addCartService" onclick="addToCart(event)" data-name="Manchas cutaneas" data-price="100">Agregar al Carrito</button>
+                </div>
+                <!--Botón de agregar unidad al carrito-->
               </div>
             </article>
 
@@ -207,6 +199,12 @@
                 <a href="./contacto.html" class="button"
                   >Solicitar más información</a
                 >
+                                <!--linkea a pagina/formulario de contacto-->
+                <div class="buttonCart">
+                <input name="quantityItem" id="quantityItem" placeholder="Cantidad" type="number" class="quantity" value="1" min="1"/>
+                <button class="button addCartService" onclick="addToCart(event)" data-name="Linfatico Facial" data-price="100">Agregar al Carrito</button>
+                </div>
+                <!--Botón de agregar unidad al carrito-->
               </div>
             </article>
           </section>
@@ -233,6 +231,12 @@
                 <a href="./contacto.html" class="button"
                   >Solicitar más información</a
                 >
+                                <!--linkea a pagina/formulario de contacto-->
+                <div class="buttonCart">
+                <input name="quantityItem" id="quantityItem" placeholder="Cantidad" type="number" class="quantity" value="1" min="1"/>
+                <button class="button addCartService" onclick="addToCart(event)" data-name="Higiene Facial" data-price="100">Agregar al Carrito</button>
+                </div>
+                <!--Botón de agregar unidad al carrito-->
               </div>
             </article>
 
@@ -314,15 +318,8 @@
     </main>
 
     <!-- Modal de Carrito -->
-    <div id="cart-modal" >
-      <div style="
-          background: white;
-          padding: 20px;
-          border-radius: 8px;
-          max-width: 500px;
-          margin: auto;
-        "
-      >
+    <div id="cart-modal">
+      <div class="cart-modal-content">
         <h3>Carrito de Compras</h3>
         <div class="cart" id="cart"></div>
         <h4 id="total">Total: $0</h4>
